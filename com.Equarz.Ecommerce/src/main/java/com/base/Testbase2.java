@@ -11,18 +11,17 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class Testbase {
-
+public class Testbase2 {
 	FileInputStream file;
 	public static Properties props;
-	public static WebDriver driver;
+	protected WebDriver driver;
 
-	public Testbase() {
+	public Testbase2() {
 		
 		props = new Properties();
 
 		try {
-			file = new FileInputStream("C:\\Users\\Dell\\git\\Eccomerce_Project\\com.Equarz.Ecommerce\\src\\main\\java\\com\\PropertiesConfig\\Propfile");
+			file = new FileInputStream("C:\\Users\\Dell\\git\\Eccomerce_Project\\com.Equarz.Ecommerce\\src\\main\\java\\com\\PropertiesConfig\\Propfile1");
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -60,4 +59,5 @@ public class Testbase {
 		
 		
 	}
+
 }

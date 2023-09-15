@@ -11,13 +11,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class Testbase {
-
+public class Testbase1 {
 	FileInputStream file;
 	public static Properties props;
 	public static WebDriver driver;
 
-	public Testbase() {
+	public Testbase1() {
 		
 		props = new Properties();
 
@@ -60,4 +59,5 @@ public class Testbase {
 		
 		
 	}
+
 }
