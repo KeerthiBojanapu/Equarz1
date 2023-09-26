@@ -2,24 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-15T15:38:31 IST" name="Default suite" finished-at="2023-09-15T15:39:17 IST" duration-ms="45787">
+  <suite started-at="2023-09-25T14:19:47 IST" name="Default suite" finished-at="2023-09-25T14:20:42 IST" duration-ms="55500">
     <groups>
     </groups>
-    <test started-at="2023-09-15T15:38:31 IST" name="Default test" finished-at="2023-09-15T15:39:17 IST" duration-ms="45787">
-      <class name="com.Equarz.Testcases.WishlistTest">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:com.Equarz.Testcases.WishlistTest@55141def]" started-at="2023-09-15T15:38:31 IST" name="initialize" finished-at="2023-09-15T15:38:50 IST" duration-ms="18757" status="PASS">
+    <test started-at="2023-09-25T14:19:47 IST" name="Default test" finished-at="2023-09-25T14:20:42 IST" duration-ms="55500">
+      <class name="com.Equarz.Testcases.HomelinkTest">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:com.Equarz.Testcases.HomelinkTest@a1153bc]" started-at="2023-09-25T14:19:47 IST" name="initialize" finished-at="2023-09-25T14:20:31 IST" duration-ms="44195" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="verifyurl()[pri:0, instance:com.Equarz.Testcases.WishlistTest@55141def]" started-at="2023-09-15T15:38:50 IST" name="verifyurl" finished-at="2023-09-15T15:39:17 IST" duration-ms="26974" status="PASS">
+        <test-method signature="search()[pri:0, instance:com.Equarz.Testcases.HomelinkTest@a1153bc]" started-at="2023-09-25T14:20:31 IST" name="search" finished-at="2023-09-25T14:20:42 IST" duration-ms="11252" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyurl -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.Equarz.Testcases.WishlistTest@55141def]" started-at="2023-09-15T15:39:17 IST" name="teardown" finished-at="2023-09-15T15:39:17 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.Equarz.Testcases.WishlistTest -->
+        </test-method> <!-- search -->
+      </class> <!-- com.Equarz.Testcases.HomelinkTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

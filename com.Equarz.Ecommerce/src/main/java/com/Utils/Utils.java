@@ -7,9 +7,11 @@ import java.io.IOException;
 import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.DataProvider;
 
+import com.Pageobjects.Homepage;
 import com.base.Testbase;
 
 public class Utils extends Testbase {
@@ -17,7 +19,7 @@ public class Utils extends Testbase {
 	
 	public String[][] setdata() throws IOException
 	{
-		File file=new File("C:\\Users\\Dell\\git\\Eccomerce_Project\\com.Equarz.Ecommerce\\src\\main\\java\\com\\testdata\\Equarz Credentials.xlsx");
+		File file=new File("C:\\Users\\Dell\\git\\Eccomerce_Project\\com.Equarz.Ecommerce\\src\\main\\java\\com\\testdata\\Login Credentials.xlsx");
 		FileInputStream stream=new FileInputStream(file);
 		XSSFWorkbook workbook=new XSSFWorkbook(stream);
 		XSSFSheet sheet=workbook.getSheetAt(0);
@@ -36,6 +38,11 @@ public class Utils extends Testbase {
 		return data;
 		
 	}
+	public static Homepage dropdown(WebElement value, String text) {
+		Select sel = new Select(value);
+		sel.selectByValue(text);
+        return new Homepage();
 	
 
+}
 }

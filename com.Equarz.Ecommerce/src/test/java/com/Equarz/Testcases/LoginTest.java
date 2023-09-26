@@ -7,7 +7,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.Pageobjects.Login_Functionality;
-import com.Pageobjects.CategoriesProduct_Functionality;
+import com.Pageobjects.Addtocart_Functionality;
 import com.Utils.Utils;
 import com.base.Testbase;
 
@@ -33,10 +33,13 @@ public class LoginTest extends Testbase {
 //	{
 //		lg.validateLogin();
 //	}
-    @Test(dataProvider = "setdata",dataProviderClass = Utils.class)
-	public void verifyurl(String username,String password) throws InterruptedException
+    //@Test(dataProvider = "setdata",dataProviderClass = Utils.class)
+	@Test
+	//public void verifyurl(String username,String password) throws InterruptedException
+	public void verifyurl()
 	{
-		lg.validateLogin(username,password);
+		//lg.validateLogin(username,password);
+		lg.validateLogin();
 		String url=driver.getCurrentUrl();
 		Assert.assertEquals("http://e-quarz.com/", url);
 	}

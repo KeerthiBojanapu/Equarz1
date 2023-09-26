@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Equarz.Testcases.WishlistTest">
+      <class name="com.Equarz.Testcases.HomelinkTest">
         <methods>
-          <include name="verifyurl"/>
-          <include name="teardown"/>
+          <include name="search"/>
           <include name="initialize"/>
         </methods>
-      </class> <!-- com.Equarz.Testcases.WishlistTest -->
+      </class> <!-- com.Equarz.Testcases.HomelinkTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
