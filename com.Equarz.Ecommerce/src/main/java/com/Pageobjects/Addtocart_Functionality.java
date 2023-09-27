@@ -26,10 +26,10 @@ public class Addtocart_Functionality extends Testbase {
 	@FindBy(xpath="//div[text()='Successfully added!']")
 	WebElement successful;
 	
-	@FindBy(xpath="//button[@class='buy_btn']")//deals
+	@FindBy(xpath="//div[@class='recomanded-buy-button']")//deals
 	WebElement buynow;
 	
-	@FindBy(xpath="//a[@href='http://e-quarz.com/product/avro-furniture-set-of-2-plastic-chairs-matt-and-gloss-pattern-plastic-chairs-for-home-living-room-bearing-capacity-up-to'][1]")
+	@FindBy(xpath="//a[@href='http://e-quarz.com/product/amazonbasics-portable-ssd-512gb-upto-2000mbs-external-ssd-usb-32-gen-2x2-usb-c-pT9415']")
 	WebElement prod;       //home
 	
 	@FindBy(xpath="//input[@class='form-control appended-form-control search-bar-input']")
