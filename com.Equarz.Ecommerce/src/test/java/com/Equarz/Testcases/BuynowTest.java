@@ -20,13 +20,23 @@ public class BuynowTest extends Testbase {
 	{
 		super();
 	}
+	@BeforeClass
+	public void login()
+	{
+		Setup();
+		lg=new Login_Functionality(driver);
+		lg.validateLogin();
+		
+	}
+		
+	
 	@BeforeMethod
 	public void initialize() throws InterruptedException
 	{
 		
-		Setup();
-		lg=new Login_Functionality(driver);
-		lg.validateLogin();
+//		Setup();
+//		lg=new Login_Functionality(driver);
+//		lg.validateLogin();
 		bf=new Buynow_Functionality (driver);		
 				
 	}
