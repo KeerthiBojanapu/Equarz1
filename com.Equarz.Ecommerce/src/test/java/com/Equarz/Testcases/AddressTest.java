@@ -38,18 +38,18 @@ public class AddressTest extends Testbase {
 		af=new AddandDeleteAddress_Functionality (driver);		
 				
 	}
-	@Test(priority=1,dataProvider = "setdata",dataProviderClass =AddressUtils.class )
+	@Test(priority=1,dataProvider = "setdata",dataProviderClass =AddressUtils.class,description = "address added successfully")
 	public void addaddress(String name,String phone,String city,String zipcode) throws InterruptedException 
 	{
 		af.addaddress(name,phone,city,zipcode);
 		
 	}
-	@Test(priority=2)
+	@Test(priority=2,description = "address edited successfully")
 	public void editaddress()
 	{
 		af.editaddress();
 	}
-	@Test(priority=3)
+	@Test(priority=3,description = "address deleted successfully")
 	public void deleteaddress() throws Throwable
 	{
 		af.deleteaddress();
