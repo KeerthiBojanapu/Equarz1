@@ -13,6 +13,7 @@ import org.testng.annotations.DataProvider;
 
 import com.Pageobjects.Homepage;
 import com.base.Testbase;
+import java.util.Set;
 
 public class AddressUtils extends Testbase{
 @DataProvider
@@ -45,5 +46,17 @@ public class AddressUtils extends Testbase{
 	
 
 }
+	public void windowhandles(String window) {
+		Set<String> handles = driver.getWindowHandles();
+		for(String hand:handles)
+		{
+			if(!window.equals(hand))
+			{
+				driver.switchTo().window(hand);
+				driver.manage().window().maximize();
+			}
+		}
+		
+	}
 
 }

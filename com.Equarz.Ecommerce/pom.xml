@@ -41,6 +41,11 @@
 
 
 
-  	</dependencies>
+  	<dependency>
+  		<groupId>Selenium</groupId>
+  		<artifactId>Selenium</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  </dependencies>
 
 </project>
